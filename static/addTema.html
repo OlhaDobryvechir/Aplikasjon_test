@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="stili.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div class="golova">Create Thema
+</div>
+<div class="write-text" id="temki">
+    <div class="enter-click">
+    <div>
+      <label for="name_en"> English name:
+      </label>
+        <span class="space-en"> </span>
+      <input type="text" id="name_en" onkeyup="approveText('en')"/>
+    </div>
+    <div>
+      <label for="name_no"> Norwegian name:</label>
+      <input type="text" id="name_no" onkeyup="approveText('no')" />
+    </div>
+    <div>
+     <button onclick="goto('index.html')"> Cancel </button>
+     <button onclick="createTema()"> Create </button>
+    </div>
+    </div>
+</div>
+
+<div class="remove-thema" >
+    <button class="remove-button" onclick="goto('removeThema.html')"> Remove Thema  </button>
+</div>
+
+</body>
+</html>
